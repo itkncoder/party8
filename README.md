@@ -1,2 +1,2 @@
 # party8
-<a href="https://part8.netlify.app">part8.netlify.app</a>
+<a href="https://party8.netlify.app">party8.netlify.app</a>
