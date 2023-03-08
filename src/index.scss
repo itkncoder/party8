@@ -1,0 +1,322 @@
+.flower-container {
+	display: flex;
+	align-items: center;
+	height: 400px;
+	position: relative;
+	font-family: Verdana, sans-serif;  
+	overflow: hidden;
+}
+.flower  {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+    position: absolute;
+	right: 160px;
+}
+.flower::before {
+	content: "8";
+	font-size: 70px;
+	color: #cc002c;  
+	width: 100px;
+	font-weight: bold;
+	height: 100px;
+	background-color: #ff8fa7;
+	border-radius: 100%;
+	position: absolute;
+	line-height: 95px;
+	text-align: center;
+	z-index: 1;
+}
+.flower::after {
+	content: "";
+	background-image: url("data:image/svg+xml,%0A%3Csvg id='Layer_1' enable-background='new 0 0 464 464' height='512' viewBox='0 0 464 464' width='512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m454.062 256-5.29 5.28c-17.68 17.68-39.11 29.33-61.74 34.93 12.03 19.96 18.96 43.35 18.96 68.36v7.48c0 18.74-15.2 33.94-33.94 33.94h-7.48c-25.01 0-48.4-6.93-68.36-18.96-5.6 22.63-17.25 44.06-34.93 61.74l-5.28 5.29c-13.26 13.25-34.74 13.25-48 0l-5.28-5.29c-17.68-17.68-29.33-39.11-34.93-61.74-19.96 12.03-43.35 18.96-68.36 18.96h-7.48c-18.74 0-33.94-15.2-33.94-33.94v-7.48c0-25.01 6.93-48.4 18.96-68.36-22.63-5.6-44.06-17.25-61.74-34.93l-5.29-5.28c-13.25-13.26-13.25-34.74 0-48l5.29-5.28c17.68-17.68 39.11-29.33 61.74-34.93-12.03-19.96-18.96-43.35-18.96-68.36v-7.48c0-18.74 15.2-33.94 33.94-33.94h7.48c25.01 0 48.4 6.93 68.36 18.96 5.6-22.63 17.25-44.06 34.93-61.74l5.28-5.29c13.26-13.25 34.74-13.25 48 0l5.28 5.29c17.68 17.68 29.33 39.11 34.93 61.74 19.96-12.03 43.35-18.96 68.36-18.96h7.48c18.74 0 33.94 15.2 33.94 33.94v7.48c0 25.01-6.93 48.4-18.96 68.36 22.63 5.6 44.06 17.25 61.74 34.93l5.29 5.28c13.25 13.26 13.25 34.74 0 48z' fill='%23ff99af'/%3E%3Cpath d='m167.792 76.97c-.88 3.57-1.62 7.17-2.19 10.79-23.155-8.101-41.172-7.42-51.32-7.42-18.74 0-33.94 15.2-33.94 33.94 0 10.087-.701 28.108 7.42 51.32-3.62.57-7.22 1.31-10.79 2.19-12.03-19.96-18.96-43.35-18.96-68.36v-7.48c0-18.74 15.2-33.94 33.94-33.94h7.48c25.01 0 48.4 6.93 68.36 18.96z' fill='%23ffa4b8'/%3E%3Cpath d='m454.062 256-5.29 5.28c-49.555 49.555-128.508 51.655-180.56 6.46-.15.16-.31.32-.47.47 45.197 52.053 43.094 131.006-6.46 180.56l-5.28 5.29c-13.26 13.25-34.74 13.25-48 0l-5.28-5.29c-49.555-49.555-51.655-128.508-6.46-180.56-.16-.15-.32-.31-.47-.47-52.053 45.197-131.006 43.094-180.56-6.46l-5.29-5.28c-13.25-13.26-13.25-34.74 0-48l5.29-5.28c49.555-49.555 128.508-51.655 180.56-6.46.15-.16.31-.32.47-.47-45.2-52.057-43.09-131.01 6.46-180.56l5.28-5.29c13.26-13.25 34.74-13.25 48 0l5.28 5.29c49.555 49.555 51.655 128.508 6.46 180.56.16.15.32.31.47.47 52.053-45.197 131.006-43.094 180.56 6.46l5.29 5.28c13.25 13.26 13.25 34.74 0 48z' fill='%23ffa4b8'/%3E%3Cg fill='%23ff99af'%3E%3Cpath d='m331.702 248h-48.79c-8.836 0-16-7.164-16-16s7.164-16 16-16h48.79c8.836 0 16 7.164 16 16s-7.163 16-16 16z'/%3E%3Cpath d='m181.092 248h-48.79c-8.836 0-16-7.164-16-16s7.164-16 16-16h48.79c8.836 0 16 7.164 16 16s-7.164 16-16 16z'/%3E%3Cpath d='m232.002 347.7c-8.836 0-16-7.163-16-16v-48.79c0-8.837 7.164-16 16-16s16 7.163 16 16v48.79c0 8.836-7.163 16-16 16z'/%3E%3Cpath d='m232.002 197.09c-8.836 0-16-7.163-16-16v-48.79c0-8.837 7.164-16 16-16s16 7.163 16 16v48.79c0 8.837-7.163 16-16 16z'/%3E%3C/g%3E%3Cpath d='m267.742 268.21c-32.099 31.68-86.62 8.779-86.62-36.21 0-44.957 54.483-67.928 86.62-36.21 20.089 18.833 20.113 53.564 0 72.42z' fill='%23ffe773'/%3E%3Cpath d='m252.824 185.564c10.09 4.486 7.974 19.502-2.965 21.019-24.126 3.345-40.329 22.358-43.28 43.257-1.558 11.035-16.645 12.935-21.105 2.722-19.069-43.67 25.521-85.597 67.35-66.998z' fill='%23ffec8f'/%3E%3Cpath d='m253.048 27.801c-8.621 3.885-14.179 10.334-18.526 14.689-26.72 26.733-42.011 61.023-45.279 96.455-1.137 12.326-18.68 13.444-21.6 1.415-10.549-43.454 1.149-91.2 35.08-125.131l5.28-5.29c13.26-13.25 34.74-13.25 48 0 5.79 5.803 3.758 14.837-2.955 17.862z' fill='%23ffb1bf'/%3E%3Cpath d='m122.743 164.598c11.736 1.218 11.82 18.142.107 19.571-29.37 3.584-57.807 16.647-80.338 39.19-5.802 5.78-14.189 12.662-15.605 26.694-.842 8.342-10.833 12.074-16.764 6.147-13.787-13.78-13.192-35.199-.201-48.2l5.29-5.28c29.386-29.386 69.149-42.102 107.511-38.122z' fill='%23ffb1bf'/%3E%3C/svg%3E");  background-position: center;
+	background-repeat: no-repeat;
+	background-size: 400px;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	animation-name: full-rotate;
+	animation-duration: 60s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+}
+.message {
+	display: flex;
+	justify-content: center;
+	font-size: 70px;
+	width: 80px;
+	height: 80px;
+	position: relative;
+	animation-name: rotate;
+	animation-duration: 3s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	z-index: 9;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.message::before {
+	content: "Поздравляем с";
+	color: white;
+	white-space: nowrap;
+	font-size: 18px;
+	position: absolute;
+	top: -50px;
+	display: block;
+}
+.message::after {
+	content: "марта";
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	bottom: -60px;
+}
+.message-text {
+	background: #ffc5d0;
+	border-radius: 20px;
+	padding: 30px 210px 30px 40px;
+	color: #ff375b;
+	font-size: 22px;
+	line-height: 1.4;
+	margin: 20px 200px 20px 0;
+}
+.message-text b {
+	display: block;
+	margin-top: 10px;
+	text-align: right;
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+@keyframes full-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@media (max-width: 767px) {
+	.flower-container {
+		height: auto;
+		display: block;
+	}
+	.flower  {
+		margin-top: 180px;
+		position: static;
+	}
+	.message-text {
+		padding: 150px 20px 10px 20px;
+		color: #ff375b;
+		font-size: 18px;
+		line-height: 1.5;
+		margin: 20px 10px;
+		font-size: 15px;
+		text-align: center;
+	}
+	.message-text b {
+		text-align: center;
+	}
+}
+
+body {
+	height: 100vh;
+	background: #ff8fa7;
+	padding: 0 200px;
+}
+
+@media screen and (max-width: 720px) {
+	body {
+		padding: 0;
+	}
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Hubballi', cursive !important;
+}
+
+
+
+
+// body {
+// 	background: #323641;
+// }
+
+.letter-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.animated-mail {
+	position: absolute;
+	height: 150px;
+	width: 200px;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	transition: .4s;
+	
+	.body {
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 100px 200px;
+		border-color: transparent transparent #e95f55 transparent;
+		z-index: 2;
+	}
+	
+	.top-fold {
+		position: absolute;
+		top: 50px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 50px 100px 0 100px;
+		-webkit-transform-origin: 50% 0%;
+		-webkit-transition: transform .4s .4s, z-index .2s .4s;
+		-moz-transform-origin: 50% 0%;
+		-moz-transition: transform .4s .4s, z-index .2s .4s;
+		transform-origin: 50% 0%;
+		transition: transform .4s .4s, z-index .2s .4s;
+		border-color: #cf4a43 transparent transparent transparent;
+		z-index: 2;
+	}
+	
+	.back-fold {
+		position: absolute;
+		bottom: 0;
+		width: 200px;
+		height: 100px;
+		background: #cf4a43;
+		z-index: 0;
+	}
+	
+	.left-fold {
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 50px 0 50px 100px;
+		border-color: transparent transparent transparent #e15349;
+		z-index: 2;
+	}
+	
+	.letter {
+		left: 20px;
+		bottom: 0px;
+		position: absolute;
+		width: 160px;
+		height: 60px;
+		background: white;
+		z-index: 1;
+		overflow: hidden;
+		-webkit-transition: .4s .2s;
+		-moz-transition: .4s .2s;
+		transition: .4s .2s;
+		
+		.letter-border {
+			height: 10px;
+			width: 100%;
+      background: repeating-linear-gradient(
+        -45deg,
+        #cb5a5e,
+        #cb5a5e 8px,
+        transparent 8px,
+        transparent 18px
+      );
+		}
+		
+		.letter-title {
+			margin-top: 10px;
+			margin-left: 5px;
+			height: 10px;
+			width: 40%;
+			background: #cb5a5e;
+		}
+		.letter-context {
+			margin-top: 10px;
+			margin-left: 5px;
+			height: 10px;
+			width: 20%;
+			background: #cb5a5e;
+		}
+		
+		.letter-stamp {
+			margin-top: 30px;
+			margin-left: 120px;
+			border-radius: 100%;
+			height: 30px;
+			width: 30px;
+			background: #cb5a5e;
+			opacity: 0.3;
+		}
+	}
+}
+
+.shadow {
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	width: 400px;
+	height: 30px;
+	transition: .4s;
+	transform: translateX(-50%);
+	-webkit-transition: .4s;
+	-webkit-transform: translateX(-50%);
+	-moz-transition: .4s;
+	-moz-transform: translateX(-50%);
+	
+	border-radius: 100%;
+	background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0), rgba(0,0,0,0.0));
+}
+
+	.letter-image:hover {
+		.animated-mail {
+			transform: translateY(50px);
+			-webkit-transform: translateY(50px);
+			-moz-transform: translateY(50px);
+		}
+		
+		.animated-mail .top-fold {
+			transition: transform .4s, z-index .2s;
+			transform: rotateX(180deg);
+			-webkit-transition: transform .4s, z-index .2s;
+			-webkit-transform: rotateX(180deg);
+			-moz-transition: transform .4s, z-index .2s;
+			-moz-transform: rotateX(180deg);
+			z-index: 0;
+		}
+		
+		.animated-mail .letter {
+			height: 180px;
+		}
+		
+		.shadow {
+			width: 250px;
+		}
+	}
+
+.title {
+	font-family: Verdana, sans-serif; 
+	color: #c61b3a;
+	text-align: center;
+	font-size: 32px;
+	margin-top: 150px;
+}
